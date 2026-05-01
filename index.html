@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Product Review Form</h1>
+
+    <form id="reviewForm">
+      <label>Your Name</label>
+      <input type="text" id="name" required>
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <label>Product Used</label>
+      <select id="product" required>
+        <option value="">Select Product</option>
+        <option>Mobile App</option>
+        <option>Website</option>
+        <option>Online Course</option>
+        <option>Service</option>
+      </select>
+
+      <label>Rating</label>
+      <select id="rating" required>
+        <option value="">Choose Rating</option>
+        <option>1 - Poor</option>
+        <option>2 - Fair</option>
+        <option>3 - Good</option>
+        <option>4 - Very Good</option>
+        <option>5 - Excellent</option>
+      </select>
+
+      <label>What did you like?</label>
+      <textarea id="feedback" rows="3" required></textarea>
+
+      <label>Suggestions for improvement</label>
+      <textarea id="suggestion" rows="3"></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <div id="success">
+      Thank you! Your review has been submitted.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
